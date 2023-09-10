@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Grand IN</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <diV class="head" style="font-size: 50px; color:black;text-align:center">HOTEL BOOKING FORM</div>
+       <div class="container">
+        <span style="font-size:30px; color:green">
+         CUSTOMER INFO</span>
+            <br>
+            <br>
+            <form id="f">
+                <label for="cname">Customer Name:<span style="color:green;font-size:20px;"></span><br>
+                <input type="text" id="cname" name="cname" required></label><br><br>
+                <label for="datein">Check-in Date:<span style="color:green;font-size:30px;"></span><br>
+                <input type="date" id="datein" name="datein" required></label><br><br>
+                <label for="days">Total No of Days:<span style="color:green;font-size:30px;"></span><br>
+                <input type="number" id="days" name="days" required></label><br><br>
+                <label for="person">Total No of Persons:<span style="color:green;font-size:30px;"></span><br>
+                <input type="number" id="person" name="person" required></label><br><br>
+              <br>
+            <span style="font-size:30px; color:green">
+               ROOM INFORMATION</span>
+                <br>
+                <br>
+                <label for="rt">Room type:<span style="color:green;font-size:30px;"></span><br>
+                <select id="rt">
+                    <option >Select</option>
+                    <option value="d">DELUXE ROOM(2500/-)</option>
+                    <option value="s">SUITE ROOM(4000/-)</option>
+                </select>
+            </label>
+                <br><br>
+                <label for="amen">Amenities:<span style="color:green;font-size:30px;"></span><br>
+                <select id="amen">
+                    <option >Select</option>
+                    <option value="a">AC(1000/-)</option>
+                    <option value="l">Locker</option>
+                </select>
+            </label>
+               <br> <br>
+            <span style="font-size:40px; color:green">PAYMENT 
+               </span>
+                <br><br>
+                    <label for="advance">Advance Payment:<span style="color:green;font-size:20px;"></span><br>
+                    <input type="number" id="advance" name="advance" required></label><br><br>
+               <button style="background-color: green; color:BLACK; border-radius:5px; font-size: 30px;" onclick="calculate()"> Calculate</button>
+                <br><br>
+                <span style="font-size:30px; color:green">
+                    COST CALCULATING</span>
+                    <br>
+                    <br>
+                    <label for="room">TOTAL ROOM COST<br>
+                    <input id="rooms" readonly></label><br><br>
+                    <label for="amenties">TOTAL AMENTIES COST:<br>
+                    <input id="amenc" readonly></label><br><br>
+            <span style="font-size:30px; color:green">
+                ADDITIONAL CHARGE</span>
+                <br><br>
+           Extra Person(>2): 1000/- PER DAY
+                <br><br>
+                <label for="addc">ADDITIONAL CHARGE:<br>
+                    <input id="acharge" readonly></label><br><br>
+               <span style="font-size:30px; color:green">
+                TOTAL COST AND BALANCE</span>
+                <br>
+                <br>
+                <label for="total">TOTAL COST</label><br>
+                <input id="total" readonly><br><br>
+                <label for="balance">BALANCE AMOUNT</label><br>
+                <input id="balance" readonly><br><br>
+            </form>
+       </div>
+       <br>
+       <br>
+       <br>
+       
+    <div class="register">
+        <a href="./last.html"><button style="background-color:blueviolet; color:white; border-radius: 10px; font-size: 30px;" type="submit">Register</button></a>
+       </div>
+       <script src="script.js"></script>
+    </body>
+</html>

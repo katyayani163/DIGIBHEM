@@ -1,0 +1,16 @@
+body{
+    background-image: url("outlineresort.jpg");
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: white;
+    opacity:0.9;
+    margin-right:500px;
+    margin-left:500px;
+    padding:40px;
+}
+.register{
+    margin-left:700px;
+}
